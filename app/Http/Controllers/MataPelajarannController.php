@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kamera;
+use App\Models\mata_pelajarann;
 use Illuminate\Http\Request;
 
-class KameraController extends Controller
+class MataPelajarannController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class KameraController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Kamera $kamera)
+    public function show(mata_pelajarann $mata_pelajarann)
     {
         //
     }
@@ -42,7 +42,7 @@ class KameraController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Kamera $kamera)
+    public function edit(mata_pelajarann $mata_pelajarann)
     {
         //
     }
@@ -50,7 +50,7 @@ class KameraController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Kamera $kamera)
+    public function update(Request $request, mata_pelajarann $mata_pelajarann)
     {
         //
     }
@@ -58,7 +58,7 @@ class KameraController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Kamera $kamera)
+    public function destroy(mata_pelajarann $mata_pelajarann)
     {
         //
     }

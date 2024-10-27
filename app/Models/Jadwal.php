@@ -11,11 +11,21 @@ class Jadwal extends Model
     use HasFactory;
 
     protected $fillable = [
-        'mapel',
         'hari',
         'ruangan',
-        'kelas',
         'jam_mulai',
         'jam_selesai',
+        'mata_pelajarann_id',
+        'recapkehadiran_id',
     ];
+
+    public function mata_pelajarann()
+    {
+        return $this->hasMany(mata_pelajarann::class);
+    }
+
+    public function recapkehadiran()
+    {
+        return $this->hasMany(RecapKehadiran::class);
+    }
 }

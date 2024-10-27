@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Siswa;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class SiswaController extends Controller
 {
@@ -23,6 +24,8 @@ class SiswaController extends Controller
         );
     }
 
+
+
     /**
      * Show the form for creating a new resource.
      */
@@ -39,7 +42,6 @@ class SiswaController extends Controller
         $validated = $request->validate([
             'nama' => 'required',
             'nis' => 'required',
-            'kelas' => 'required',
             'jurusan' => 'required',
             'alamat' => 'required',
             'no_hp' => 'required',
@@ -100,4 +102,8 @@ class SiswaController extends Controller
     {
         //
     }
+
+    
 }
+
+

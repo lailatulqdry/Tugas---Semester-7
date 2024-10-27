@@ -11,10 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('qr_codes', function (Blueprint $table) {
+        Schema::create('mata_pelajaranns', function (Blueprint $table) {
             $table->id();
-            $table->string('qr_code');
-            $table->dateTime('expired');
             $table->timestamps();
         });
     }
@@ -24,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('qr_codes');
+        Schema::dropIfExists('mata_pelajaranns');
     }
 };

@@ -16,8 +16,7 @@ return new class extends Migration
             $table->foreignId('siswa_id')->constrained('siswas');
             $table->foreignId('guru_id')->constrained('gurus');
             $table->foreignId('lokasi_id')->constrained('lokasis');
-            $table->foreignId('qr_code_id')->constrained('qr_codes');
-            $table->enum('kehadiran', ['Hadir', 'Alpha', 'Izin'])->default('Hadir');
+            $table->enum('kehadiran', ['Hadir', 'Alpha', 'Izin', 'Sakit'])->default('Hadir');
             $table->timestamps();
         });
     }

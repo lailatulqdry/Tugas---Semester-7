@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\LaporanAbsensi;
+use App\Models\kelas;
 use Illuminate\Http\Request;
 
-class LaporanAbsensiController extends Controller
+class KelasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +34,7 @@ class LaporanAbsensiController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(LaporanAbsensi $laporanAbsensi)
+    public function show(kelas $kelas)
     {
         //
     }
@@ -42,7 +42,7 @@ class LaporanAbsensiController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(LaporanAbsensi $laporanAbsensi)
+    public function edit(kelas $kelas)
     {
         //
     }
@@ -50,7 +50,7 @@ class LaporanAbsensiController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, LaporanAbsensi $laporanAbsensi)
+    public function update(Request $request, kelas $kelas)
     {
         //
     }
@@ -58,7 +58,7 @@ class LaporanAbsensiController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(LaporanAbsensi $laporanAbsensi)
+    public function destroy(kelas $kelas)
     {
         //
     }

@@ -5,13 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class QrCode extends Model
+class mata_pelajarann extends Model
 {
-    /** @use HasFactory<\Database\Factories\QrCodeFactory> */
     use HasFactory;
 
     protected $fillable = [
-        'qr_code',
-        'expired',
+        'kode_mapel',
+        'nama_mapel',
     ];
 }

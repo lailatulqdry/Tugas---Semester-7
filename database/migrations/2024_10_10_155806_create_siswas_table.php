@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('siswas', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('kelas_id')->constrained('kelass')->onDelete('cascade');
+            $table->foreignId('recapkehadiran_id')->constrained('recapkehadirans')->onDelete('cascade');
             $table->string('nama');
             $table->integer('nis');
-            $table->string('kelas');
             $table->string('jurusan');
             $table->string('alamat');
             $table->string('no_hp');

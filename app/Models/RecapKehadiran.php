@@ -9,4 +9,10 @@ class RecapKehadiran extends Model
 {
     /** @use HasFactory<\Database\Factories\RecapKehadiranFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'siswa',
+        'guru',
+        'jadwal',
+    ];
 }

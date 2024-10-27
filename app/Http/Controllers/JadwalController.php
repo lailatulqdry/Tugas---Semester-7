@@ -37,10 +37,8 @@ class JadwalController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'mapel' => 'required',
             'hari' => 'required',
             'ruangan' => 'required',
-            'kelas' => 'required',
             'jam_mulai' => 'required',
             'jam_selesai' => 'required',
         ], [

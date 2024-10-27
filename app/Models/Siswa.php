@@ -14,10 +14,23 @@ class Siswa extends Model
     protected $fillable = [
         'nama',
         'nis',
-        'kelas',
         'jurusan',
         'alamat',
         'no_hp',
         'jenis_kelamin',
+        'kelas_id',
+        'recapkehadiran_id',
     ];
+
+    public function kelas()
+    {
+        return $this->hasMany(Kelas::class);
+    }
+
+    public function recapkehadiran()
+    {
+        return $this->hasMany(RecapKehadiran::class);
+    }
+
+
 }

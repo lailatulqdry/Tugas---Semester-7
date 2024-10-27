@@ -16,5 +16,17 @@ class Guru extends Model
         'jabatan',
         'alamat',
         'jenis_kelamin',
+        'jadwal_id',
+        'recapkehadiran_id',
     ];
+
+    public function jadwal()
+    {
+        return $this->hasMany(Jadwal::class);
+    }
+
+    public function recapkehadiran()
+    {
+        return $this->hasMany(RecapKehadiran::class);
+    }
 }
